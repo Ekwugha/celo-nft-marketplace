@@ -10,3 +10,4 @@ type ListingEntity @entity {
   # We mark the buyer as an optional property
   buyer: Bytes # address
 }
+
