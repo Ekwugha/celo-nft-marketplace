@@ -16,8 +16,8 @@ export default function Listing(props) {
   const provider = useProvider();
   const { address } = useAccount();
   const ERC721Contract = useContract({
-    addressOrName: props.nftAddress,
-    contractInterface: erc721ABI,
+    address: props.nftAddress,
+    abi: erc721ABI,
     signerOrProvider: provider,
   });
   console.log(ERC721Contract);
